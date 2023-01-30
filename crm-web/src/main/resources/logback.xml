@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <property name="LOG_HOME" value="E:/IdeaProject/crm/crm-web" />    <!-- 日志目录 -->
+    <!-- 日志记录时需要有一个明确的日志记录格式，本次将日志数据的格式定义为一个配置属性 -->
+    <!--  %d{yyyy-MM-dd HH:mm:ss.SSS}   -->
+    <property name="logging.pattern"
+              value="【jayj-crm】 [%thread] %-5level %logger{50} - %msg%n"/>
+    <!-- 为便于代码调试，在每次应用程序启动时，可以将日志信息显示在控制台中 -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>${logging.pattern}</pattern>       <!-- 格式引用 -->
+        </layout>
+    </appender>
+    <!-- 将每天的日志保存在一个文件之中 -->
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <Prudent>true</Prudent>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>
+                ${LOG_HOME}/logs/%d{yyyy-MM}/jayjxia_%d{yyyy-MM-dd}.log
+            </FileNamePattern>
+            <MaxHistory>60</MaxHistory>            <!-- 删除超过60天的日志 -->
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>                <!-- ERROR及以上级别日志 -->
+        </filter>
+        <encoder>
+            <Pattern>${logging.pattern}</Pattern>       <!-- 格式引用 -->
+        </encoder>
+    </appender>
+    <root level="info">                  <!-- 全局日志级别 -->
+        <appender-ref ref="console"/>             <!-- 控制台日志 -->
+        <appender-ref ref="file"/>                <!-- 文件日志 -->
+    </root>
+</configuration>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--mybatis核心配置类 -->
+<configuration>
+    <settings>
+        <!-- 设置打印日志 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    <typeAliases>
+        <!--对po对象起别名 -->
+        <package name="com.maker.crm.model"/>
+    </typeAliases>
+    
+    <mappers>
+        <package name="com.maker.crm.dao"/>
+    </mappers>
+</configuration>

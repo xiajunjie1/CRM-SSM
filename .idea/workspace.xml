@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4ac7065-c6d2-46c8-a868-5ae18cd9f86b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/note" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/src/main/resources/generator.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-01/jayjxia_2023-01-21.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/abs/AbstractAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/abs/constants/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/errors/LoginError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/interceptor/LoginValidateInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/setting/user/UserAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/web/CommonAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ActivitiesAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/WorkbenchIndexAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/commons/model/ReturnObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/commons/utils/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/HikariCPConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/SpringMybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/TransactionManagerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/common/JacksonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/common/ViewResolverConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/context/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/context/config/WebApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/user/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/web/config/StartWebApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/resources/config/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/resources/config/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/errors/notLogin.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/save.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/save.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/permission/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/role/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/role/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/user/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/user/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/qx/user/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/activity/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/chart/activity/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/chart/clue/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/chart/customerAndContacts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/chart/transaction/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/convert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/contacts/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/contacts/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/customer/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/customer/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/main/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/save.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/image/IMG_7114.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/image/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/image/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/image/user-thumbnail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master_bak/css/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master_bak/js/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master_bak/locale/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/css/bootstrap-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/css/bootstrap-select.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/css/bootstrap-select.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/bootstrap-select.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/bootstrap-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/bootstrap-select.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-am_ET.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-am_ET.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-am_ET.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ar_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ar_AR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ar_AR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-bg_BG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-bg_BG.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-bg_BG.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-cs_CZ.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-cs_CZ.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-cs_CZ.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-da_DK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-da_DK.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-da_DK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-de_DE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-de_DE.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-de_DE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-en_US.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-en_US.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-en_US.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-es_CL.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-es_CL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-es_ES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-es_ES.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-es_ES.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-et_EE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-et_EE.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-et_EE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-eu.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-eu.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fa_IR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fa_IR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fa_IR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fi_FI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fi_FI.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fi_FI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fr_FR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fr_FR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-fr_FR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-hr_HR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-hr_HR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-hr_HR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-hu_HU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-hu_HU.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-hu_HU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-id_ID.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-id_ID.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-id_ID.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-it_IT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-it_IT.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-it_IT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ja_JP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ja_JP.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ja_JP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-kh_KM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-kh_KM.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-kh_KM.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ko_KR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ko_KR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ko_KR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-lt_LT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-lt_LT.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-lt_LT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-lv_LV.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-lv_LV.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-lv_LV.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-nb_NO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-nb_NO.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-nb_NO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-nl_NL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-nl_NL.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-nl_NL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pl_PL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pl_PL.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pl_PL.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pt_BR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pt_BR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pt_PT.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-pt_PT.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ro_RO.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ro_RO.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ro_RO.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ru_RU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ru_RU.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ru_RU.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sk_SK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sk_SK.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sk_SK.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sl_SI.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sl_SI.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sl_SI.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sr_SP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sr_SP.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sr_SP.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sv_SE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sv_SE.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-sv_SE.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-th_TH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-th_TH.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-th_TH.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-tr_TR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-tr_TR.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-tr_TR.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ua_UA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ua_UA.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-ua_UA.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-vi_VN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-vi_VN.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-vi_VN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-zh_CN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-zh_CN.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-zh_CN.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-zh_TW.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-selector/js/i18n/defaults-zh_TW.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap_3.3.0_bak/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/css/jquery.bs_pagination.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/js/jquery.bs_pagination.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/localization/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/localization/el.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/localization/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/localization/en.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/localization/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/localization/ru.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_typeahead/bootstrap3-typeahead.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/echars/echarts.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/jquery-1.11.1-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/css/zTreeStyle/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/zTree_v3-master/js/jquery.ztree.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/test/java/com/maker/test/TimeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/test/java/com/maker/test/TransactionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.8.5-bin/apache-maven-3.8.5" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.8.5-bin\apache-maven-3.8.5\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2K4TlIoB0ZI03AUHdTDwvsT8FRf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProject/crm/crm-web/src/main/webapp/jquery/bootstrap-selector&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\crm\crm-web\src\main\webapp\jquery\bootstrap-selector" />
+      <recent name="E:\IdeaProject\crm\crm-web\src\main\webapp\image" />
+      <recent name="E:\IdeaProject\crm\crm-mybatis-generator\src\main\resources" />
+      <recent name="E:\IdeaProject\crm\crm-web\src\main\webapp\WEB-INF\pages" />
+      <recent name="E:\IdeaProject\crm\crm-web\src\main\resources\config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProject\crm\crm-web\src\main\webapp" />
+      <recent name="E:\IdeaProject\crm\crm-web\src\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Smart Tomcat.crm-tomcat">
+    <configuration name="TimeTest.timeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maker.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maker.test.TimeTest" />
+      <option name="METHOD_NAME" value="timeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maker.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maker.test.TransactionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionTest.transactionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="crm-web" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maker.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.maker.test" />
+      <option name="MAIN_CLASS_NAME" value="com.maker.test.TransactionTest" />
+      <option name="METHOD_NAME" value="transactionTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="crm-tomcat" type="com.poratu.idea.plugins.tomcat" factoryName="SMART_TOMCAT_FACTORY">
+      <option name="adminPort" value="8005" />
+      <option name="contextPath" value="/" />
+      <option name="docBase" value="$PROJECT_DIR$/crm-web/src/main/webapp" />
+      <option name="envOptions" />
+      <option name="passParentEnvironmentVariables" value="true" />
+      <option name="port" value="8080" />
+      <option name="tomcatInfo">
+        <TomcatInfo>
+          <option name="name" value="Apache Tomcat/9.0.63" />
+          <option name="number" value="0" />
+          <option name="path" value="D:\tomcat9\apache-tomcat-9.0.63-windows-x64\tomcat9" />
+          <option name="version" value="9.0.63.0" />
+        </TomcatInfo>
+      </option>
+      <option name="vmOptions" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TransactionTest.transactionTest" />
+        <item itemvalue="JUnit.TransactionTest" />
+        <item itemvalue="JUnit.TimeTest.timeTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4ac7065-c6d2-46c8-a868-5ae18cd9f86b" name="Changes" comment="" />
+      <created>1673233007590</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673233007590</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
