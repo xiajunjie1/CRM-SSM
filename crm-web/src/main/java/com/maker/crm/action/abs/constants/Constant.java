@@ -15,4 +15,7 @@ public class Constant {
     public static final String COOKIE_LOGIN_PWD="loginPwd";
     //登录相关的Cookie的最大生命周期
     public static final int COOKIE_LOGIN_MAX_AGE=3600*240;//10天
+
+    public static final String EDIT_FLAG_NO_EDITED="0";
+    public static final String EDIT_FLAG_YES_EDITED="1";
 }

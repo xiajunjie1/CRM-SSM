@@ -737,6 +737,8 @@
             this.picker.find('tfoot th.clear')
                 .text(dates[this.language].clear || dates['en'].clear)
                 .toggle(this.clearBtn !== false);
+            console.log(this.language);
+            console.log(dates[this.language].clear);
             this.updateNavArrows();
             this.fillMonths();
             var prevMonth = UTCDate(year, month - 1, 28, 0, 0, 0, 0),

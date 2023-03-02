@@ -1,8 +1,10 @@
 package com.maker.crm.action.abs;
 
 import com.fasterxml.jackson.databind.cfg.ContextAttributes;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.PropertiesEditor;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.context.request.RequestAttributes;
@@ -37,5 +39,9 @@ public class AbstractAction {
                 super.setValue(java.util.Date.from(instant));
             }
         });
+    }
+
+    public boolean notNull(String param){
+        return StringUtils.hasLength(param);
     }
 }

@@ -30,6 +30,23 @@ public class TransactionTest {
 
         user.setLoginAct("zhangsan");
         user.setLoginPwd(DigestUtils.md5DigestAsHex("xia123".getBytes(StandardCharsets.UTF_8)));
-        userService.addUser(user);
+       try{
+           userService.addUser(user);
+       }catch (Exception e){
+           LOGGER.error("【test】添加用户出错：{}",e.getMessage());
+       }
+    }
+    @Test
+    public void exceptionTest(){
+        for(int i=0;i<20;i++){
+            try{
+                if(i==5)throw new Exception("异常处理运行测试");
+                System.out.println("【数据】:"+i);
+
+
+            }catch(Exception e){
+                LOGGER.error("第{}条数据发生异常：{}",i,e.getMessage());
+            }
+        }
     }
 }

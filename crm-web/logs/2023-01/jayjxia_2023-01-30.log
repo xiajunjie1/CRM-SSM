@@ -1,0 +1,8 @@
+【jayj-crm】 [main] ERROR com.maker.test.TransactionTest - 【test】添加用户出错：
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+### The error may exist in com/maker/crm/dao/user/UserMapper.xml
+### The error may involve com.maker.crm.dao.user.UserMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into tbl_user (id, login_act, name,        login_pwd, email, expire_time,        lock_stat, dept_no, allow_ip,        create_time, create_by, edit_time,        edit_by)     values (?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?, ?, ?,        ?)
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
+; Column 'id' cannot be null; nested exception is java.sql.SQLIntegrityConstraintViolationException: Column 'id' cannot be null
