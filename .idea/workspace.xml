@@ -5,74 +5,84 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ac7065-c6d2-46c8-a868-5ae18cd9f86b" name="Changes" comment="2023/3/2 完成了市场活动功能">
-      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/hs_err_pid21392.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/hs_err_pid800.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/replay_pid21392.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-mybatis-generator/replay_pid800.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-01/jayjxia_2023-01-30.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-02/jayjxia_2023-02-06.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-02/jayjxia_2023-02-12.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-02/jayjxia_2023-02-23.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-02/jayjxia_2023-02-26.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-02/jayjxia_2023-02-28.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/setting/SettingIndexAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/setting/dictionary/DictionaryAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/setting/dictionary/type/TypeDicAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/setting/dictionary/value/ValueDicAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ActivityRemarkAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/commons/utils/MD5Utils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/commons/utils/POIUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/commons/utils/UUIDUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityRemarkMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityRemarkMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryValueMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryValueMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/Activity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/ActivityRemark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/DictionaryType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/DictionaryValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/abs/AbstractService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/ActivityRemarkService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/ActivityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/impl/ActivityRemarkServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/impl/ActivityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/DictionaryTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/DictionaryValueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/impl/DictionaryTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/impl/DictionaryValueServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/errors/exception.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/test/pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/test/java/com/maker/test/ClassTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crm-web/src/test/java/com/maker/test/PoiExcelTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-03/jayjxia_2023-03-12.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-03/jayjxia_2023-03-18.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-03/jayjxia_2023-03-28.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-04/jayjxia_2023-04-03.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-04/jayjxia_2023-04-06.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/logs/2023-04/jayjxia_2023-04-08.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ChartAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ClueAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ClueActivityRelationAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ClueRemarkAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ContactsAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/CustomerAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/TranAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/commons/utils/PropertiesUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/clue/ClueActivityRelationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/clue/ClueActivityRelationMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/clue/ClueMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/clue/ClueMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/clue/ClueRemarkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/clue/ClueRemarkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/customer/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/customer/CustomerMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/customer/CustomerRemarkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/customer/CustomerRemarkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/tran/TransactionHistoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/tran/TransactionHistoryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/tran/TransactionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/tran/TransactionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/tran/TransactionRemarkMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/tran/TransactionRemarkMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/Clue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/ClueActivityRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/ClueRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/CustomerRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/FunnelVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/TransactionHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/model/TransactionRemark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/clue/ClueActivityRelationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/clue/ClueRemarkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/clue/ClueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/clue/impl/ClueActivityRelationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/clue/impl/ClueRemarkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/clue/impl/ClueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/contacts/ContactsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/contacts/impl/ContactsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/tran/TransactionHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/tran/TransactionRemarkService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/tran/TransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/tran/impl/TransactionHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/tran/impl/TransactionRemarkServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/tran/impl/TransactionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/resources/Possibility.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/chart/transaction/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm-mybatis-generator/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm-mybatis-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/abs/AbstractAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/abs/AbstractAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/abs/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/abs/constants/Constant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ActivitiesAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/action/workbench/ActivitiesAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/common/JacksonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/config/common/JacksonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/context/config/WebApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/context/config/WebApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/user/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/user/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/type/save.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/edit.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/dictionary/value/save.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/settings/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/activity/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/activity/detail.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/activity/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/activity/ActivityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryValueMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryValueMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryValueMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/dao/dictionary/DictionaryValueMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/ActivityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/ActivityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/impl/ActivityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/activity/impl/ActivityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/DictionaryValueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/DictionaryValueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/impl/DictionaryValueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/java/com/maker/crm/service/dictionary/impl/DictionaryValueServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/chart/transaction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/logs/2023-03/jayjxia_2023-03-02.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/convert.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/convert.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/clue/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/customer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/customer/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/detail.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/WEB-INF/pages/workbench/transaction/save.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/js/jquery.bs_pagination.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/main/webapp/jquery/bs_pagination-master/js/jquery.bs_pagination.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crm-web/src/test/java/com/maker/test/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/crm-web/src/test/java/com/maker/test/TransactionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +126,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProject/crm/crm-web/src/main/webapp/WEB-INF/pages/errors&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/IdeaProject/SpringMVCDemo&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -272,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675042479088</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="2023/3/2 完成了市场活动功能">
+      <created>1677722372145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677722372145</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

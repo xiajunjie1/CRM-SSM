@@ -434,4 +434,56 @@ public class ActivitiesAction extends AbstractAction {
 
         return mav;
     }
+    @RequestMapping("queryActivityByNameCid")
+    @ResponseBody
+    public Object queryActivityByNameCid(String name,String cid){
+        Map<String,String> param=new HashMap<>();
+        param.put("name",name);
+        param.put("cid",cid);
+        ReturnObject<List<Activity>> returnObject=new ReturnObject<>();
+        try{
+            List<Activity> alist=activityService.queryActivityByNameCid(param);
+            returnObject.setCode(Constant.RETURN_OBJECT_CODE_SUCCESS);
+            returnObject.setObject(alist);
+        }catch (Exception e){
+            LOGGER.error("根据名称以及线索id查询市场活动出错：{}",e.getMessage());
+            returnObject.setCode(Constant.RETURN_OBJECT_CODE_FAIL);
+            returnObject.setMessage("服务器忙，请稍后重试...");
+        }
+        return returnObject;
+    }
+    @RequestMapping("queryActivityByNameInCid")
+    @ResponseBody
+    public Object queryActivityByNameInCid(String name,String cid){
+        Map<String,String> map=new HashMap<>();
+        map.put("name",name);
+        map.put("cid",cid);
+        ReturnObject<List<Activity>> returnObject=new ReturnObject<>();
+        try{
+           List<Activity> activityList= activityService.queryActivityByNameInCid(map);
+            returnObject.setCode(Constant.RETURN_OBJECT_CODE_SUCCESS);
+            returnObject.setObject(activityList);
+        }catch(Exception e){
+            LOGGER.error("创建交易查询市场活动出现异常：{}",e.getMessage());
+            returnObject.setCode(Constant.RETURN_OBJECT_CODE_FAIL);
+            returnObject.setMessage("服务器忙，请稍后重试...");
+        }
+        return returnObject;
+    }
+    @RequestMapping("queryActivityByName")
+    @ResponseBody
+    public Object queryActivityByName(String name){
+        ReturnObject<List<Activity>> returnObject=new ReturnObject<>();
+        try{
+            List<Activity> activityList=activityService.queryActivityByName(name);
+            returnObject.setCode(Constant.RETURN_OBJECT_CODE_SUCCESS);
+            returnObject.setObject(activityList);
+        }catch (Exception e){
+            LOGGER.error("根据名称查询市场活动出现异常：{}",e.getMessage());
+            returnObject.setCode(Constant.RETURN_OBJECT_CODE_FAIL);
+            returnObject.setMessage("服务器忙，请稍后重试...");
+
+        }
+        return returnObject;
+    }
 }

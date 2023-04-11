@@ -55,4 +55,5 @@ public interface DictionaryValueMapper {
 
     int insertDictionaryValue(DictionaryValue dictionaryValue);
     List<DictionaryValue> selectAllDictionaryValue()throws Exception;
+    List<DictionaryValue> selectDictionaryValuesByTypeCode(String typeCode)throws Exception;
 }

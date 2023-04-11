@@ -55,7 +55,7 @@
         </javaModelGenerator>
 
         <!--Mapper映射文件生成所在的目录 为每一个数据库的表生成对应的SqlMap文件 -->
-        <sqlMapGenerator targetPackage="com.maker.crm.dao.dictionary"
+        <sqlMapGenerator targetPackage="com.maker.crm.dao.tran"
                          targetProject="E:/IdeaProject/crm/crm-web/src/main/java">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
@@ -65,7 +65,7 @@
                 type="MIXEDMAPPER",生成基于注解的Java Model 和相应的Mapper对象
                 type="XMLMAPPER",生成SQLMap XML文件和独立的Mapper接口
         -->
-        <javaClientGenerator targetPackage="com.maker.crm.dao.dictionary"
+        <javaClientGenerator targetPackage="com.maker.crm.dao.tran"
                              targetProject="E:/IdeaProject/crm/crm-web/src/main/java" type="XMLMAPPER">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
@@ -96,8 +96,9 @@
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
-        -->
-        <!--
+
+
+
         <table tableName="tbl_contacts" domainObjectName="Contacts"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
@@ -113,7 +114,7 @@
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
-        -->
+-->
         <!--
         <table tableName="tbl_customer" domainObjectName="Customer"
                enableCountByExample="false" enableUpdateByExample="false"
@@ -126,8 +127,8 @@
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
-        -->
-
+``-->
+            <!--
                 <table tableName="tbl_dic_type" domainObjectName="DictionaryType"
                        enableCountByExample="false" enableUpdateByExample="false"
                        enableDeleteByExample="false" enableSelectByExample="false"
@@ -140,7 +141,7 @@
                        enableDeleteByExample="false" enableSelectByExample="false"
                        selectByExampleQueryId="false">
                 </table>
-
+-->
         <!--
                 <table tableName="tbl_activity" domainObjectName="Activity"
                        enableCountByExample="false" enableUpdateByExample="false"
@@ -156,22 +157,22 @@
                        selectByExampleQueryId="false">
                 </table>
  -->
-    <!--
-        <table tableName="tbl_transaction" domainObjectName="Transaction"
+
+        <table tableName="tbl_tran" domainObjectName="Transaction"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
-        <table tableName="tbl_transaction_history" domainObjectName="TransactionHistory"
+        <table tableName="tbl_tran_history" domainObjectName="TransactionHistory"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
-        <table tableName="tbl_transaction_remark" domainObjectName="TransactionRemark"
+        <table tableName="tbl_tran_remark" domainObjectName="TransactionRemark"
                enableCountByExample="false" enableUpdateByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false">
         </table>
-    -->
+
     </context>
 </generatorConfiguration>

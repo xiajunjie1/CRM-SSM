@@ -1,0 +1,9 @@
+【jayj-crm】 [http-nio-8080-exec-3] ERROR com.maker.crm.action.workbench.TranAction - 分页查询交易信息，传入参数为空
+【jayj-crm】 [http-nio-8080-exec-5] ERROR com.maker.crm.action.workbench.TranAction - 分页查询交易信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'tco.name' in 'field list'
+### The error may exist in com/maker/crm/dao/tran/TransactionMapper.xml
+### The error may involve com.maker.crm.dao.tran.TransactionMapper.selectTransactionSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: Select tt.id,u1.name as owner,tt.money,tt.name,     tc.name as customer_id,dv1.value as stage,dv2.value as type,     dv3.value as source,tco.name as contacts_id     from tbl_tran tt join tbl_user u1 on tt.owner=u1.id     join tbl_customer tc on tt.customer_id=tc.id     join tbl_dic_value dv1 on tt.stage=dv1.id     left join tbl_dic_value dv2 on tt.type=dv2.id     left join tbl_dic_value dv3 on tt.source=dv3.id     left join tbl_contacts tco on tt.contacts_id=tco.id            limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'tco.name' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'tco.name' in 'field list'

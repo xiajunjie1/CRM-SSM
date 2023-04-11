@@ -1,0 +1,16 @@
+【jayj-crm】 [http-nio-8080-exec-3] ERROR c.m.c.a.setting.dictionary.value.ValueDicAction - 查询全部字典值出错：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+### The error may exist in com/maker/crm/dao/dictionary/DictionaryValueMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: Select id,value,text,order_no,type_code from   (select id,value,text,order_no,type_code order by order_no) as a group by a.type_code,a.order_no
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'id' in 'field list'
+【jayj-crm】 [http-nio-8080-exec-3] ERROR c.m.c.a.setting.dictionary.value.ValueDicAction - 查询全部字典值出错：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tbl_dic_value) as a group by a.type_code,a.order_no' at line 2
+### The error may exist in com/maker/crm/dao/dictionary/DictionaryValueMapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: Select id,value,text,order_no,type_code from   (select id,value,text,order_no,type_code order by order_no from tbl_dic_value) as a group by a.type_code,a.order_no
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tbl_dic_value) as a group by a.type_code,a.order_no' at line 2
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'from tbl_dic_value) as a group by a.type_code,a.order_no' at line 2

@@ -75,4 +75,20 @@ public interface ActivityMapper {
     int insertImportActivity(List<Activity> activityList)throws Exception;
 
     Activity selectActivityById(String id)throws Exception;
+
+    List<Activity> selectActivityByClueId(String cid)throws Exception;
+    /**
+     * 查询所有未与此ClueId关联的市场活动
+     * */
+    List<Activity> selectActivityByNameCid(Map<String,String> map)throws Exception;
+    /**
+     * 查询所有与此ClueId关联了的市场活动
+     * */
+    List<Activity> selectActivityByNameInCid(Map<String,String> map)throws Exception;
+
+    List<Activity> selectActivityByName(String name)throws Exception;
+
+
+
+
 }

@@ -313,4 +313,49 @@
   where a.id=#{id}
 </select>
 
+  <select id="selectActivityByClueId" parameterType="string" resultMap="BaseResultMap">
+    Select a.id,a.name,a.start_date,a.end_date,u1.name as owner
+    from tbl_activity a join tbl_user u1 on a.owner=u1.id
+    join tbl_clue_activity_relation car on a.id=car.activity_id
+    where car.clue_id=#{cid}
+
+  </select>
+
+  <select id="selectActivityByNameCid" parameterType="map" resultMap="BaseResultMap">
+    Select a.id,a.name,a.start_date,a.end_date,u.name as owner
+    from tbl_activity a join tbl_user u on a.owner=u.id
+    <where>
+      <if test="name!=null and name!=''">
+          and a.name like '%' #{name} '%'
+      </if>
+      <if test="cid!=null and cid!='' ">
+        and a.id not in(SELECT car.activity_id from tbl_clue_activity_relation car WHERE car.clue_id=#{cid})
+      </if>
+
+    </where>
+  </select>
+  
+  <select id="selectActivityByNameInCid" parameterType="map" resultMap="BaseResultMap">
+    Select a.id,a.name,a.start_date,a.end_date,u.name as owner
+    from tbl_activity a join tbl_user u on a.owner=u.id
+    <where>
+    <if test="name!=null and name!=''">
+      and a.name like '%' #{name} '%'
+    </if>
+    <if test="cid!=null and cid!='' ">
+      and a.id in(SELECT car.activity_id from tbl_clue_activity_relation car WHERE car.clue_id=#{cid})
+    </if>
+    </where>
+  </select>
+
+<select id="selectActivityByName" parameterType="string" resultMap="BaseResultMap">
+  Select a.id,a.name,u.name as owner,a.start_date,a.end_date
+  from tbl_activity a join tbl_user u on a.owner=u.id
+  <where>
+    <if test="name!=null and name!=''">
+      and a.name like '%' #{name} '%'
+    </if>
+  </where>
+</select>
+
 </mapper>

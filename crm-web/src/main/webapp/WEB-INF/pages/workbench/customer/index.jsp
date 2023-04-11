@@ -1,15 +1,17 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 
-<link href="../../jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
-<link href="../../jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" />
+<link href="/jquery/bootstrap_3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+<link href="/jquery/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" />
 
-<script type="text/javascript" src="../../jquery/jquery-1.11.1-min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
-<script type="text/javascript" src="../../jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript" src="/jquery/jquery-1.11.1-min.js"></script>
+<script type="text/javascript" src="/jquery/bootstrap_3.3.0/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/jquery/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="/jquery/bootstrap-datetimepicker-master/locale/bootstrap-datetimepicker.zh-CN.js"></script>
 
 <script type="text/javascript">
 
@@ -20,7 +22,60 @@
 			//防止下拉菜单消失
 	        e.stopPropagation();
 	    });
-		
+
+	    var queryCustomerSplitByCondition=function(pageNo,pageSize,tbody){
+            var name=$.trim($("#query-name").val());
+            var owner=$.trim($("#query-owner").val());
+            var phone=$.trim($("#query-phone").val());
+            var website=$.trim($("#query-website").val());
+            var data={
+                'pageNo':pageNo,
+                'pageSize':pageSize,
+                'name':name,
+                'owner':owner,
+                'phone':phone,
+                'website':website
+            };
+            $.ajax({
+                'url':"/customer/queryCustomerSplit",
+                'data':JSON.stringify(data),
+                'type':"post",
+                'contentType':"application/json",
+                'dataType':"json",
+                'success':function(data){
+                    $("#queryHint").html("");
+                    if(data.code==1){
+                        var table=$("#"+tbody);
+                        $.each(data.customerList,function(index,obj){
+                             var tr=$("<tr></tr>");
+                              tr.addClass("active");
+                              var td1=$("<td></td>");
+                              var td2=$("<td></td>");
+                              var td3=$("<td></td>");
+                              var td4=$("<td></td>");
+                              var td5=$("<td></td>");
+                              td1.html("<input type='checkbox' value='"+obj.id+"' />");
+                              td2.html("<a href='/clue/clueDetails?id="+obj.id+"'>"+obj.name+"</a>");
+                              td3.html(obj.owner);
+                              td4.html(obj.phone);
+                              td5.html(obj.website);
+                              tr.append(td1);
+                              tr.append(td2);
+                              tr.append(td3);
+                              tr.append(td4);
+                              tr.append(td5);
+                              table.append(tr);
+                        });
+                    }
+                },
+                'beforeSend':function(){
+                 $("#queryHint").html("查询中，请稍等...<img src='/image/loading.gif' width=20px height=20px />");
+                }
+
+            });
+	    }
+
+		queryCustomerSplitByCondition(1,2,"cTbody");
 	});
 	
 </script>
@@ -203,7 +258,8 @@
 			</div>
 		</div>
 	</div>
-	
+	<div class="col-xs-3 col-xs-offset-4 " style="heigth:25px"><span id="queryHint" style="color:#f00"></span></div>
+    <hr />
 	<div style="position: relative; top: -20px; left: 0px; width: 100%; height: 100%;">
 	
 		<div style="width: 100%; position: absolute;top: 5px; left: 10px;">
@@ -214,28 +270,28 @@
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">名称</div>
-				      <input class="form-control" type="text">
+				      <input class="form-control" id="query-name" type="text">
 				    </div>
 				  </div>
 				  
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">所有者</div>
-				      <input class="form-control" type="text">
+				      <input class="form-control" id="query-owner" type="text">
 				    </div>
 				  </div>
 				  
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">公司座机</div>
-				      <input class="form-control" type="text">
+				      <input class="form-control" id="query-phone" type="text">
 				    </div>
 				  </div>
 				  
 				  <div class="form-group">
 				    <div class="input-group">
 				      <div class="input-group-addon">公司网站</div>
-				      <input class="form-control" type="text">
+				      <input class="form-control" id="query-website" type="text">
 				    </div>
 				  </div>
 				  
@@ -262,21 +318,8 @@
 							<td>公司网站</td>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td><input type="checkbox" /></td>
-							<td><a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='detail.html';">动力节点</a></td>
-							<td>zhangsan</td>
-							<td>010-84846003</td>
-							<td>http://www.bjpowernode.com</td>
-						</tr>
-                        <tr class="active">
-                            <td><input type="checkbox" /></td>
-                            <td><a style="text-decoration: none; cursor: pointer;" onclick="window.location.href='detail.html';">动力节点</a></td>
-                            <td>zhangsan</td>
-                            <td>010-84846003</td>
-                            <td>http://www.bjpowernode.com</td>
-                        </tr>
+					<tbody id="cTbody">
+
 					</tbody>
 				</table>
 			</div>

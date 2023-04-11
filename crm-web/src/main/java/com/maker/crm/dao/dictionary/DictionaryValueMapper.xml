@@ -137,6 +137,15 @@
   </insert>
 
 <select id="selectAllDictionaryValue" resultMap="BaseResultMap">
-  Select id,value,text,order_no,type_code from tbl_dic_value group by order_no,id order by type_code
+  Select id,value,text,order_no,type_code from
+  (select id,value,text,order_no,type_code from tbl_dic_value order by order_no ) as a group by a.type_code,a.order_no
 </select>
+
+  <select id="selectDictionaryValuesByTypeCode" parameterType="string" resultMap="BaseResultMap">
+    Select id,value,text,order_no,type_code from tbl_dic_value
+    where type_code=#{typeCode}
+    order by order_no
+  </select>
+
+
 </mapper>

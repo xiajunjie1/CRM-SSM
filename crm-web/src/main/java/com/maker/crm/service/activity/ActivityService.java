@@ -34,6 +34,17 @@ public interface ActivityService {
 
     public Activity queryActivityById(String id)throws Exception;
 
+    public List<Activity> queryActivityByCid(String cid)throws Exception;
+
+    public List<Activity> queryActivityByNameCid(Map<String,String> map)throws Exception;
+
+    public List<Activity> queryActivityByIds(String[] ids)throws Exception;
+
+    public List<Activity> queryActivityByNameInCid(Map<String,String> map)throws Exception;
+
+    public List<Activity> queryActivityByName(String name)throws Exception;
+
+
 
 
 }

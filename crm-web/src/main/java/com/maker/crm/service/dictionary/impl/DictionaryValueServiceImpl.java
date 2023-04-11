@@ -43,4 +43,13 @@ public class DictionaryValueServiceImpl implements DictionaryValueService {
 
         return dictionaryValueList;
     }
+
+    @Override
+    public List<DictionaryValue> queryDicValueByTypeCode(String typeCode) throws Exception {
+        if(!StringUtils.hasLength(typeCode)){
+            LOGGER.error("传入的typeCode值为空");
+            return null;
+        }
+        return dictionaryValueMapper.selectDictionaryValuesByTypeCode(typeCode);
+    }
 }

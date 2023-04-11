@@ -167,10 +167,10 @@
 				<li class="liClass"><a href="javascript:void(0);" target="workareaFrame"><span class="glyphicon glyphicon-time"></span> 审批</a></li>
 				<li class="liClass"><a href="javascript:void(0);" target="workareaFrame"><span class="glyphicon glyphicon-user"></span> 客户公海</a></li>
 				<li class="liClass"><a href="/activity/index" target="workareaFrame"><span class="glyphicon glyphicon-play-circle"></span> 市场活动</a></li>
-				<li class="liClass"><a href="clue/index.html" target="workareaFrame"><span class="glyphicon glyphicon-search"></span> 线索（潜在客户）</a></li>
-				<li class="liClass"><a href="customer/index.html" target="workareaFrame"><span class="glyphicon glyphicon-user"></span> 客户</a></li>
+				<li class="liClass"><a href="/clue/index" target="workareaFrame"><span class="glyphicon glyphicon-search"></span> 线索（潜在客户）</a></li>
+				<li class="liClass"><a href="/customer/index" target="workareaFrame"><span class="glyphicon glyphicon-user"></span> 客户</a></li>
 				<li class="liClass"><a href="contacts/index.html" target="workareaFrame"><span class="glyphicon glyphicon-earphone"></span> 联系人</a></li>
-				<li class="liClass"><a href="transaction/index.html" target="workareaFrame"><span class="glyphicon glyphicon-usd"></span> 交易（商机）</a></li>
+				<li class="liClass"><a href="/tran/index" target="workareaFrame"><span class="glyphicon glyphicon-usd"></span> 交易（商机）</a></li>
 				<li class="liClass"><a href="visit/index.html" target="workareaFrame"><span class="glyphicon glyphicon-phone-alt"></span> 售后回访</a></li>
 				<li class="liClass">
 					<a href="#no2" class="collapsed" data-toggle="collapse"><span class="glyphicon glyphicon-stats"></span> 统计图表</a>
@@ -178,7 +178,7 @@
 						<li class="liClass"><a href="chart/activity/index.html" target="workareaFrame">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span> 市场活动统计图表</a></li>
 						<li class="liClass"><a href="chart/clue/index.html" target="workareaFrame">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span> 线索统计图表</a></li>
 						<li class="liClass"><a href="chart/customerAndContacts/index.html" target="workareaFrame">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span> 客户和联系人统计图表</a></li>
-						<li class="liClass"><a href="chart/transaction/index.html" target="workareaFrame">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span> 交易统计图表</a></li>
+						<li class="liClass"><a href="/chart/tran/toChartIndex" target="workareaFrame">&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-right"></span> 交易统计图表</a></li>
 					</ul>
 				</li>
 				<li class="liClass"><a href="javascript:void(0);" target="workareaFrame"><span class="glyphicon glyphicon-file"></span> 报表</a></li>

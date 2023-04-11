@@ -244,4 +244,41 @@ public class ActivityServiceImpl extends AbstractService implements ActivityServ
         }
         return activityMapper.selectActivityById(id);
     }
+
+    @Override
+    public List<Activity> queryActivityByCid(String cid) throws Exception {
+        if(!StringUtils.hasLength(cid)){
+            LOGGER.error("根据线索id查询市场活动，传入的线索id为空");
+            return null;
+        }
+
+        return activityMapper.selectActivityByClueId(cid);
+    }
+
+    @Override
+    public List<Activity> queryActivityByNameCid(Map<String, String> map) throws Exception {
+
+        return activityMapper.selectActivityByNameCid(map);
+    }
+
+    @Override
+    public List<Activity> queryActivityByIds(String[] ids) throws Exception {
+       if(ids==null || ids.length==0){
+           LOGGER.error("根据id查询市场活动传入id为空");
+           return null;
+       }
+        return activityMapper.selectActivityByIds(ids);
+    }
+
+    @Override
+    public List<Activity> queryActivityByNameInCid(Map<String, String> map) throws Exception {
+
+        return activityMapper.selectActivityByNameInCid(map);
+    }
+
+    @Override
+    public List<Activity> queryActivityByName(String name) throws Exception {
+
+        return activityMapper.selectActivityByName(name);
+    }
 }

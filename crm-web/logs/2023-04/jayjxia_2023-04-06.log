@@ -1,0 +1,187 @@
+【jayj-crm】 [http-nio-8080-exec-9] ERROR com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Exception during pool initialization.
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:829)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:449)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:242)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:359)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:201)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:470)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:100)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:337)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:86)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:89)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	at jdk.proxy3/jdk.proxy3.$Proxy25.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:160)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy3/jdk.proxy3.$Proxy51.selectByLoginActAndPwd(Unknown Source)
+	at com.maker.crm.service.user.impl.UserServiceImpl.queryUserByLoginActAndPwd(UserServiceImpl.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy52.queryUserByLoginActAndPwd(Unknown Source)
+	at com.maker.crm.action.setting.user.UserAction.loginHandle(UserAction.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1743)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:89)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:120)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:949)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:819)
+	... 97 common frames omitted
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:542)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:156)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:63)
+	... 100 common frames omitted
+【jayj-crm】 [http-nio-8080-exec-7] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+【jayj-crm】 [http-nio-8080-exec-1] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+【jayj-crm】 [http-nio-8080-exec-4] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+【jayj-crm】 [http-nio-8080-exec-7] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+【jayj-crm】 [http-nio-8080-exec-3] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+【jayj-crm】 [http-nio-8080-exec-5] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+【jayj-crm】 [http-nio-8080-exec-9] ERROR com.maker.crm.action.workbench.CustomerAction - 查询顾客信息出现异常：
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+### The error may exist in com/maker/crm/dao/customer/CustomerMapper.xml
+### The error may involve com.maker.crm.dao.customer.CustomerMapper.selectCustomerSplitByCondition-Inline
+### The error occurred while setting parameters
+### SQL: select cus.id,u1.name as owner,cus.name,cus.phone,u2.name as create_by,cus.create_time   ,u3.name as edit_by,cus.edit_time,cus.contact_summary,cus.next_contact_time,   cus.description,cus.address,cus.website   from tbl_customer cus join tbl_user u1 on cus.owner=u1.id   join tbl_user u2 on cus.create_by=u2.id   left join tbl_user u3 on cus.edit_by=u3.id    WHERE limit ?,?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 0,2' at line 7

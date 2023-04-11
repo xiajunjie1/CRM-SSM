@@ -8,4 +8,5 @@ public interface DictionaryValueService {
     public int addDicValue(DictionaryValue dictionaryValue)throws Exception;
 
     public List<DictionaryValue> queryAllDicValue()throws Exception;
+    public List<DictionaryValue> queryDicValueByTypeCode(String typeCode)throws Exception;
 }
